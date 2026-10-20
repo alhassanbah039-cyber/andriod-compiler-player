@@ -109,3 +109,7 @@ tasks.register("packageToolchainAssets") {
     }
 }
 
+tasks.named("preBuild") {
+    dependsOn("packageToolchainAssets")
+}
+

@@ -38,7 +38,7 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Verify & Package Offline Toolchain Assets
-        run: ./gradlew packageToolchainAssets --no-daemon
+        run: ./gradlew :app:packageToolchainAssets --no-daemon
 
       - name: Compile and Assemble Debug APK
         run: ./gradlew assembleDebug --no-daemon --stacktrace
