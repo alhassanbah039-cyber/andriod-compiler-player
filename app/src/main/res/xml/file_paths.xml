@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Expose internal sandbox project storage directories -->
+    <files-path name="sandbox_projects" path="projects/" />
+    <files-path name="sandbox_toolchains" path="toolchains/" />
+    
+    <!-- Code cache and intermediate build artifacts -->
+    <cache-path name="sandbox_cache" path="." />
+    
+    <!-- External files for media export / camera integration -->
+    <external-files-path name="external_sandbox" path="." />
+</paths>
