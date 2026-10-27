@@ -558,22 +558,25 @@ fun ExecutionCanvasContainer(
                             horizontalArrangement = Arrangement.spacedBy(8.dp),
                             modifier = Modifier.padding(top = 4.dp)
                         ) {
-                            executionOutput.details["loadedClass"]?.let { cls ->
+                            val loadedClass = executionOutput.details["loadedClass"]
+                            if (loadedClass != null) {
                                 SuggestionChip(
                                     onClick = {},
-                                    label = { Text("Class: $cls", fontSize = 11.sp) }
+                                    label = { Text("Class: $loadedClass", fontSize = 11.sp) }
                                 )
                             }
-                            executionOutput.details["targetAbi"]?.let { abi ->
+                            val targetAbi = executionOutput.details["targetAbi"]
+                            if (targetAbi != null) {
                                 SuggestionChip(
                                     onClick = {},
-                                    label = { Text("ABI: $abi", fontSize = 11.sp) }
+                                    label = { Text("ABI: $targetAbi", fontSize = 11.sp) }
                                 )
                             }
-                            executionOutput.details["returnValue"]?.let { ret ->
+                            val returnValue = executionOutput.details["returnValue"]
+                            if (returnValue != null) {
                                 SuggestionChip(
                                     onClick = {},
-                                    label = { Text("Return: $ret", fontSize = 11.sp) }
+                                    label = { Text("Return: $returnValue", fontSize = 11.sp) }
                                 )
                             }
                         }

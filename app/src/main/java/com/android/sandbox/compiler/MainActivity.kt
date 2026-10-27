@@ -31,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.android.sandbox.compiler.model.ProjectLanguage
 import com.android.sandbox.compiler.model.SandboxProject
+import com.android.sandbox.compiler.module3_pipeline.ExecutionOutput
 import com.android.sandbox.compiler.ui.ConsoleLogEntry
 import com.android.sandbox.compiler.ui.ConsoleLogLevel
 import com.android.sandbox.compiler.ui.SandboxUiState
